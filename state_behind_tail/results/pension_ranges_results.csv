@@ -1,0 +1,25 @@
+part,setting,hedge,ils_fraction,p_market,p_statutory,growth,n_admissible
+appetite,market 10% / statutory 5%,,,,,,0
+appetite,market 10% / statutory 10%,,,,,,0
+appetite,market 10% / statutory 15%,0.9,0.4,0.0951,0.1444,0.01480,5
+appetite,market 15% / statutory 5%,,,,,,0
+appetite,market 15% / statutory 10%,0.7,0.4,0.1413,0.0959,0.01509,11
+appetite,market 15% / statutory 15%,0.8,0.2,0.1289,0.1446,0.01529,23
+appetite,market 20% / statutory 5%,0.6,0.7,0.1601,0.0456,0.01456,9
+appetite,market 20% / statutory 10%,0.6,0.3,0.1691,0.0946,0.01529,28
+appetite,market 20% / statutory 15%,0.6,0.0,0.1892,0.1470,0.01564,46
+budget,10%,,,,,,0
+budget,15%,0.7,0.4,0.1413,0.0959,0.01509,11
+budget,20%,0.6,0.4,0.1304,0.0897,0.01647,18
+state,Crash share = 10%,0.6,0.2,0.1311,0.0970,0.01772,31
+state,Crash share = 18%,,,,,,0
+state,Crash persistence = 25%,0.6,0.3,0.1261,0.0940,0.01538,22
+state,Crash persistence = 65%,0.8,0.6,0.1374,0.0997,0.01452,5
+state,Equity loss in a crash = -15%,0.6,0.2,0.1189,0.0932,0.01802,31
+state,Equity loss in a crash = -35%,,,,,,0
+state,Rate fall in a crash = -0.30 pp,0.6,0.4,0.1323,0.0996,0.01487,20
+state,Rate fall in a crash = -0.90 pp,,,,,,0
+state,Longevity drift persistence = 0.85,0.7,0.3,0.1457,0.0730,0.01522,19
+state,Longevity drift persistence = 0.98,,,,,,0
+state,Longevity drift size = 0.3%,0.7,0.3,0.1460,0.0773,0.01522,19
+state,Longevity drift size = 0.7%,0.7,0.6,0.1456,0.0903,0.01478,2

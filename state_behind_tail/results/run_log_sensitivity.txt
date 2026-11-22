@@ -1,0 +1,35 @@
+  done: Crash share
+  done: Crash persistence
+  done: Equity loss in a crash
+  done: Rate fall in a crash
+  done: Longevity drift persistence
+  done: Longevity drift size
+Risk appetite (budget 15%):
+  market 10%, statutory 5%: none
+  market 10%, statutory 10%: none
+  market 10%, statutory 15%: hedge 90% | ILS 40% / ETF 60% | P 9.5% / 14.4% | g 1.48% | n_ok 5
+  market 15%, statutory 5%: none
+  market 15%, statutory 10%: hedge 70% | ILS 40% / ETF 60% | P 14.1% / 9.6% | g 1.51% | n_ok 11
+  market 15%, statutory 15%: hedge 80% | ILS 20% / ETF 80% | P 12.9% / 14.5% | g 1.53% | n_ok 23
+  market 20%, statutory 5%: hedge 60% | ILS 70% / ETF 30% | P 16.0% / 4.6% | g 1.46% | n_ok 9
+  market 20%, statutory 10%: hedge 60% | ILS 30% / ETF 70% | P 16.9% / 9.5% | g 1.53% | n_ok 28
+  market 20%, statutory 15%: hedge 60% | ILS 0% / ETF 100% | P 18.9% / 14.7% | g 1.56% | n_ok 46
+Budget (limits 15% / 10%):
+  10%: none
+  15%: hedge 70% | ILS 40% / ETF 60% | P 14.1% / 9.6% | g 1.51% | n_ok 11
+  20%: hedge 60% | ILS 40% / ETF 60% | P 13.0% / 9.0% | g 1.65% | n_ok 18
+State calibration (limits 15% / 10%, budget 15%):
+  base: hedge 70% | ILS 40% / ETF 60% | P 14.1% / 9.6% | g 1.51% | n_ok 11
+  Crash share: low 10% -> hedge 60% | ILS 20% / ETF 80% | P 13.1% / 9.7% | g 1.77% | n_ok 31
+               high 18% -> none
+  Crash persistence: low 25% -> hedge 60% | ILS 30% / ETF 70% | P 12.6% / 9.4% | g 1.54% | n_ok 22
+                     high 65% -> hedge 80% | ILS 60% / ETF 40% | P 13.7% / 10.0% | g 1.45% | n_ok 5
+  Equity loss in a crash: low -15% -> hedge 60% | ILS 20% / ETF 80% | P 11.9% / 9.3% | g 1.80% | n_ok 31
+                          high -35% -> none
+  Rate fall in a crash: low -0.30 pp -> hedge 60% | ILS 40% / ETF 60% | P 13.2% / 10.0% | g 1.49% | n_ok 20
+                        high -0.90 pp -> none
+  Longevity drift persistence: low 0.85 -> hedge 70% | ILS 30% / ETF 70% | P 14.6% / 7.3% | g 1.52% | n_ok 19
+                               high 0.98 -> none
+  Longevity drift size: low 0.3% -> hedge 70% | ILS 30% / ETF 70% | P 14.6% / 7.7% | g 1.52% | n_ok 19
+                        high 0.7% -> hedge 70% | ILS 60% / ETF 40% | P 14.6% / 9.0% | g 1.48% | n_ok 2
+wrote pension_ranges_decision.png, pension_ranges_state.png, pension_ranges_results.csv

@@ -1,0 +1,40 @@
+Optimum under the overarching criterion:
+  Conventional: normal tails, market risk only, 1 year hedge 60% | ILS 0% / ETF 100% | P market 0.2%, statutory 0.0% | growth 1.38% | binding [] | final year 0.2% / 0.0%
+                                                start (no reallocation, hedge 60%): P market 0.4%, statutory 0.1% | final year 0.4% / 0.1% | growth 0.98%
+  + 10 years                                    hedge 60% | ILS 0% / ETF 100% | P market 13.8%, statutory 7.5% | growth 1.55% | binding [] | final year 7.6% / 4.1%
+                                                start (no reallocation, hedge 60%): P market 22.0%, statutory 13.2% | final year 13.3% / 8.0% | growth 1.08% | breaches a limit
+  + heavy tails (univariate)                    hedge 60% | ILS 0% / ETF 100% | P market 12.3%, statutory 7.1% | growth 1.55% | binding [] | final year 7.1% / 4.1%
+                                                start (no reallocation, hedge 60%): P market 19.5%, statutory 12.2% | final year 12.4% / 7.8% | growth 1.05% | breaches a limit
+  + shared state                                hedge 70% | ILS 50% / ETF 50% | P market 14.5%, statutory 8.4% | growth 1.47% | binding ['market', 'statutory'] | final year 10.1% / 5.6%
+                                                start (no reallocation, hedge 60%): P market 25.7%, statutory 14.1% | final year 17.8% / 8.8% | growth 1.05% | breaches a limit
+  + longevity (total risk)                      hedge 70% | ILS 40% / ETF 60% | P market 14.1%, statutory 9.7% | growth 1.51% | binding ['market', 'statutory'] | final year 9.2% / 6.7%
+                                                start (no reallocation, hedge 60%): P market 28.2%, statutory 14.1% | final year 20.6% / 8.8% | growth 1.04% | breaches a limit
+When (full model, optimum by today's market state):
+  Unconditional   hedge 70% | ILS 40% / ETF 60% | P market 14.1%, statutory 9.7% | final year 9.2% / 6.7% | growth 1.51% | binding ['market', 'statutory'] | start: 28.2% / 14.1%
+  Today calm      hedge 60% | ILS 30% / ETF 70% | P market 14.7%, statutory 9.6% | final year 9.8% / 7.2% | growth 1.64% | binding ['market', 'statutory'] | start: 25.6% / 13.2%
+  Today in crash  none admissible; least-risk: hedge 90% | ILS 70% / ETF 30% | P market 16.7%, statutory 9.5% | growth 0.93% | start: 45.5% / 19.4%
+Hedge ratio (full model, safest split):
+  statutory: 40%:2.0%/ILS90%  50%:2.7%/ILS90%  60%:4.0%/ILS90%  70%:6.2%/ILS85%  80%:8.9%/ILS85%  90%:12.2%/ILS85%  100%:15.7%/ILS75%  110%:19.5%/ILS70%  120%:23.1%/ILS70%
+  market: 40%:20.9%/ILS60%  50%:18.4%/ILS65%  60%:16.0%/ILS60%  70%:13.6%/ILS60%  80%:11.3%/ILS60%  90%:9.1%/ILS55%  100%:7.1%/ILS55%  110%:5.4%/ILS50%  120%:4.2%/ILS45%
+Split of the sleeve (ILS fraction):
+  statutory Conventional: normal tails, market risk only, 1 year min-risk 85% (P 0.0%) | growth-optimal within limit 0% | admissible ILS range (0.0, 1.0)
+  statutory + 10 years                                    min-risk 85% (P 3.3%) | growth-optimal within limit 0% | admissible ILS range (0.0, 1.0)
+  statutory + heavy tails (univariate)                    min-risk 70% (P 3.7%) | growth-optimal within limit 0% | admissible ILS range (0.0, 1.0)
+  statutory + shared state                                min-risk 90% (P 4.1%) | growth-optimal within limit 30% | admissible ILS range (0.3, 1.0)
+  statutory + longevity (total risk)                      min-risk 90% (P 4.1%) | growth-optimal within limit 30% | admissible ILS range (0.3, 1.0)
+  market    Conventional: normal tails, market risk only, 1 year min-risk 90% (P 0.0%) | growth-optimal within limit 0% | admissible ILS range (0.0, 1.0)
+  market    + 10 years                                    min-risk 100% (P 6.1%) | growth-optimal within limit 0% | admissible ILS range (0.0, 1.0)
+  market    + heavy tails (univariate)                    min-risk 100% (P 6.3%) | growth-optimal within limit 0% | admissible ILS range (0.0, 1.0)
+  market    + shared state                                min-risk 100% (P 13.2%) | growth-optimal within limit 70% | admissible ILS range (0.7, 1.0)
+  market    + longevity (total risk)                      min-risk 60% (P 15.9%) | growth-optimal within limit - | admissible ILS range None
+Conventional: normal tails, market risk only, 1 year | stat: ILS  0.0% ETF  0.0% -> ETF 15% | mark: ILS  0.0% ETF  0.1% -> ETF 15%
++ 10 years | stat: ILS  3.4% ETF  7.5% -> ETF 15% | mark: ILS  6.1% ETF 13.7% -> ETF 15%
++ heavy tails (univariate) | stat: ILS  4.2% ETF  7.2% -> ETF 15% | mark: ILS  6.3% ETF 12.2% -> ETF 15%
++ shared state | stat: ILS  4.4% ETF 14.7% -> ILS 15% | mark: ILS 13.2% ETF 22.6% -> ILS 15%
++ longevity (total risk) | stat: ILS  4.4% ETF 14.7% -> ILS 15% | mark: ILS 17.3% ETF 18.6% -> none
+  hedge ratio: asset duration 8.45 vs liabilities 14.0 | funding-ratio hedge 60% | surplus hedge 71% | FR change per -100bp -5.55% (market-consistent); statutory: liabilities duration 0, bonds are unhedged FR risk
+  average rate change p.a.: +0.000 %-pts
+  marginal equity mean   3.4  sd  17.7  1y 0.5%  -43.0
+  marginal ils    mean   4.6  sd  10.9  1y 0.5%  -58.5
+  marginal etf    mean   6.0  sd  17.7  1y 0.5%  -40.8
+wrote pension_decision_ladder.png and pension_study_results.csv
